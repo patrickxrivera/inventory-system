@@ -29,21 +29,17 @@ yarn run dev:web
 
 Clone down the repo and move into the directory.
 ```shell
-git clone https://github.com/pxr13/mern-boilerplate
-cd mern-boilerplate
+git clone https://github.com/pxr13/mern-boilerplate && cd mern-boilerplate
 ```
 
 Install and run the server:
 ```shell
-npm i
-npm run dev
+npm i && npm run dev
 ```
 
 In a new tab, install and run the client:
 ```shell
-cd client/
-npm i
-npm start
+cd client/ && npm i && npm start
 ```
 You should now be taken to http://localhost:3000 and see the home screen!
 
