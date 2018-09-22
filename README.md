@@ -1,88 +1,58 @@
+![Logo of the project](./client/public/mern.jpg)
+
 # MERN Boilerplate &middot; [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 > Build MERN apps with ease
 
 Boilerplate for developing apps with the MERN stack (Mongo, Express, React, and Node).
 
-## Installing / Getting started
+By: [Patrick Rivera](mailto:patrick.x.rivera@gmail.com)
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
+[patrickrivera.io](https://patrickrivera.io)
 
-```shell
-commands here
-```
+## First time setup
 
-Here you should say what actually happens when you execute the code above.
-
-## Developing
-
-### Built With
-List main libraries, frameworks used including versions (React, Angular etc...)
-
-### Prerequisites
-What is needed to set up the dev environment. For instance, global dependencies or any other tools. include download links.
-
-
-### Setting up Dev
-
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
+The first step to running MERN-boilerplate locally is downloading the code by cloning the repository:
 
 ```shell
-git clone https://github.com/your/your-project.git
-cd your-project/
-packagemanager install
+git clone https://github.com/pxr13/mern-boilerplate
 ```
 
-And state what happens step-by-step. If there is any virtual environment, local server or database feeder needed, explain here.
+## Develop the web UI
 
-### Building
+To develop the frontend and web UI run
 
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here. for example:
+```
+yarn run dev:web
+```
 
+## Getting Started
+
+Clone down the repo and move into the directory.
 ```shell
-./configure
-make
-make install
+git clone https://github.com/pxr13/mern-boilerplate
+cd mern-boilerplate
 ```
 
-Here again you should state what actually happens when the code above gets
-executed.
-
-### Deploying / Publishing
-give instructions on how to build and release a new version
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
-
+Install and run the server:
 ```shell
-packagemanager deploy your-project -s server.com -u username -p password
+npm i
+npm run dev
 ```
 
-And again you'd need to tell what the previous code actually does.
-
-## Versioning
-
-We can maybe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [link to tags on this repository](/tags).
-
-
-## Configuration
-
-Here you should write what are all of the configurations a user can enter when
-using the project.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-Explain what these tests test and why.
-
+In a new tab, install and run the client:
 ```shell
-Give an example
+cd client/
+npm i
+npm start
 ```
+You should now be taken to http://localhost:3000 and see the home screen!
 
-## Style guide
+## Built With
+* React
+* Node
+* MongoDB
+* Express
 
-Explain your code style and show how to check it.
 
 ## Api Reference
 
@@ -93,7 +63,3 @@ If the api is external, link to api documentation. If not describe your api incl
 
 Explaining what database (and version) has been used. Provide download links.
 Documents your database design and schemas, relations etc... 
-
-## Licensing
-
-State what the license is and how to find the text version of the license.
