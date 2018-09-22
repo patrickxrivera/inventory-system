@@ -9,17 +9,11 @@ By: [Patrick Rivera](mailto:patrick.x.rivera@gmail.com)
 
 [patrickrivera.io](https://patrickrivera.io)
 
-## Prerequisites
-
-You must install [concurrently](https://www.npmjs.com/package/concurrently) globally if you want to run both the client and server in the same terminal.
-
-```npm install -g concurrently```
-
 ## First time setup
 
 The first step to running MERN-boilerplate locally is downloading the code by cloning the repository:
 
-```sh
+```shell
 git clone https://github.com/pxr13/mern-boilerplate
 ```
 
@@ -37,9 +31,18 @@ yarn run dev:web
 git clone https://github.com/pxr13/mern-boilerplate
 cd mern-boilerplate
 npm i && cd client/ && npm i
-npm run dev
-New terminal: cd client/ && npm start
 ```
+
+Run server:
+```shell
+npm run dev
+```
+
+In a new tab, run client:
+```shell
+cd client/ && npm start
+```
+
 
 ## Built With
 * React
