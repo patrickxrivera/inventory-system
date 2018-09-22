@@ -30,17 +30,19 @@ yarn run dev:web
 ```shell
 git clone https://github.com/pxr13/mern-boilerplate
 cd mern-boilerplate
-npm i && cd client/ && npm i
 ```
 
-Run server:
+Install and run the server:
 ```shell
+npm i
 npm run dev
 ```
 
-In a new tab, run client:
+In a new tab, install and run the client:
 ```shell
-cd client/ && npm start
+cd client/
+npm i
+npm start
 ```
 
 
