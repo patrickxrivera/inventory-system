@@ -5,19 +5,12 @@ By: [Patrick Rivera](mailto:patrick.x.rivera@gmail.com)
 
 [patrickrivera.io](https://patrickrivera.io)
 
-## First time setup
-
-The first step to running the inventory system app locally is downloading the code by cloning the repository:
-
-```shell
-git clone https://github.com/pxr13/inventory-system
-```
 
 ## Getting Started
 
 Clone down the repo and move into the directory.
 ```shell
-git clone https://github.com/pxr13/mern-boilerplate && cd mern-boilerplate
+git clone https://github.com/pxr13/inventory-system && cd inventory-system
 ```
 
 Install and run the server:
