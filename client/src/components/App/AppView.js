@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-class App extends Component {
+class AppView extends Component {
   componentDidMount() {
     axios
       .get('/api')
@@ -16,10 +16,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <span>hi</span>
+        <span>hello world!</span>
       </div>
     );
   }
 }
 
-export default App;
+export default AppView;
