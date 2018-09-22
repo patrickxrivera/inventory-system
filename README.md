@@ -5,6 +5,10 @@
 
 Boilerplate for developing apps with the MERN stack (Mongo, Express, React, and Node).
 
+By [Patrick Rivera](mailto:patrick.x.rivera@gmail.com)
+
+[patrickrivera.io](https://patrickrivera.io)
+
 ## Installing / Getting started
 
 A quick introduction of the minimal setup you need to get a hello world up &
@@ -63,11 +67,6 @@ packagemanager deploy your-project -s server.com -u username -p password
 
 And again you'd need to tell what the previous code actually does.
 
-## Versioning
-
-We can maybe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [link to tags on this repository](/tags).
-
-
 ## Configuration
 
 Here you should write what are all of the configurations a user can enter when
@@ -82,10 +81,6 @@ Explain what these tests test and why.
 Give an example
 ```
 
-## Style guide
-
-Explain your code style and show how to check it.
-
 ## Api Reference
 
 If the api is external, link to api documentation. If not describe your api including authentication methods as well as explaining all the endpoints with their required parameters.
@@ -95,7 +90,3 @@ If the api is external, link to api documentation. If not describe your api incl
 
 Explaining what database (and version) has been used. Provide download links.
 Documents your database design and schemas, relations etc... 
-
-## Licensing
-
-State what the license is and how to find the text version of the license.
