@@ -6,6 +6,9 @@ const keys = require('./config/keys');
 
 const port = process.env.PORT || 5000;
 
+/*
+
+=== Include if using MongoDB ===
 mongoose.Promise = global.Promise;
 
 mongoose
@@ -16,5 +19,7 @@ mongoose
   .catch((err) => {
     console.log(err.message);
   });
+
+*/
 
 app.listen(port, () => console.log(`\n=== API up on port: ${port} ===\n`));
