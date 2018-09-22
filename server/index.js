@@ -1,6 +1,6 @@
-const express = require('express');
-const path = require('path');
-const generatePassword = require('password-generator');
+import express from 'express';
+import path from 'path';
+import generatePassword from 'password-generator';
 
 const app = express();
 
@@ -23,7 +23,7 @@ app.get('/api/passwords', (req, res) => {
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '../client/build/index.html'));
+  res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
 const port = process.env.PORT || 5000;

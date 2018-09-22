@@ -1,17 +1,30 @@
 {
-  "name": "rando",
+  "name": "Node-Express-Mongo-Boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node ./server",
+    "dev": "nodemon ./server --exec babel-node",
+    "test": "NODE_ENV=test nodemon --exec 'mocha -R min' \"server/**/*.test.js\" --compilers js:babel-core/register --require babel-polyfill",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
+    "mongoose": "^5.0.14",
     "password-generator": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "git+https://github.com/chaijs/chai-http.git#3ea4524",
+    "mocha": "^5.0.5",
+    "nodemon": "^1.17.3"
   }
 }
