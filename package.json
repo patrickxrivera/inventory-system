@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./server",
-    "dev": "nodemon ./server --exec babel-node",
-    "test": "NODE_ENV=test nodemon --exec 'mocha -R min' \"server/**/*.test.js\" --compilers js:babel-core/register --require babel-polyfill",
+    "dev": "nodemon ./server",
+    "test":
+      "NODE_ENV=test nodemon --exec 'mocha -R min' \"server/**/*.test.js\" --compilers js:babel-core/register --require babel-polyfill",
     "concurrently": "concurrently \"npm run dev\" \"cd client/ && npm run start\"",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
