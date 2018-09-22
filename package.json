@@ -7,14 +7,18 @@
     "start": "node ./server",
     "dev": "nodemon ./server --exec babel-node",
     "test": "NODE_ENV=test nodemon --exec 'mocha -R min' \"server/**/*.test.js\" --compilers js:babel-core/register --require babel-polyfill",
+    "concurrently": "concurrently \"npm run dev\" \"cd client/ && npm run start\"",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.4",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
-    "mongoose": "^5.0.14",
+    "helmet": "^3.13.0",
+    "mongoose": "^5.2.17",
     "password-generator": "^2.2.0"
   },
   "devDependencies": {
