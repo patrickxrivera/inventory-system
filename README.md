@@ -29,8 +29,7 @@ yarn run dev:web
 
 Clone down the repo and move into the directory.
 ```shell
-git clone https://github.com/pxr13/mern-boilerplate
-cd mern-boilerplate
+git clone https://github.com/pxr13/mern-boilerplate && cd mern-boilerplate
 ```
 
 Install and run the server:
