@@ -27,6 +27,7 @@ yarn run dev:web
 
 ## Getting Started
 
+Clone down the repo and move into the directory.
 ```shell
 git clone https://github.com/pxr13/mern-boilerplate
 cd mern-boilerplate
@@ -44,7 +45,7 @@ cd client/
 npm i
 npm start
 ```
-
+You should now be taken to http://localhost:3000 and see the home screen!
 
 ## Built With
 * React
