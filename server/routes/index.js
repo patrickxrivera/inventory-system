@@ -1,8 +1,8 @@
 const express = require('express');
-const passwordController = require('../controllers/password');
+const testController = require('../controllers/test');
 
 const apiRouter = express.Router();
 
-apiRouter.get('/passwords', passwordController.getPasswords);
+apiRouter.get('/', testController.helloWorld);
 
 module.exports = apiRouter;
