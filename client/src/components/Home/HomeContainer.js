@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import { HomeView } from './';
+import { selectRestaurants } from '../../reducers/restaurants';
+import { fetchRestaurants } from '../../actions/restaurants';
+import { HomeBranch } from './';
 
 class HomeContainer extends Component {
+  componentDidMount() {
+    this.props.fetchRestaurants();
+  }
+
   render() {
-    return <HomeView />;
+    return <HomeBranch restaurants={this.props.restaurants} />;
   }
 }
 
-export default HomeContainer;
+const mapStateToProps = (state) => ({
+  restaurants: selectRestaurants(state)
+});
+
+export default connect(mapStateToProps, { fetchRestaurants })(HomeContainer);
