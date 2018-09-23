@@ -1,8 +1,9 @@
 const express = require('express');
-const testController = require('../controllers/test');
+const restaurantController = require('../controllers/restaurant');
+const RestaurantModel = require('../models/Restaurant');
 
 const apiRouter = express.Router();
 
-apiRouter.get('/', testController.helloWorld);
+apiRouter.post('/restaurant', restaurantController.create(RestaurantModel));
 
 module.exports = apiRouter;

@@ -1,6 +1,5 @@
 const devKeys = require('./dev');
 const prodKeys = require('./prod');
+const { isProdEnv } = require('../utils/helpers');
 
-const isProdEnv = () => process.env.NODE_ENV === 'production';
-
-module.exports = prodKeys;
+module.exports = isProdEnv() ? prodKeys : devKeys;

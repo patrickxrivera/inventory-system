@@ -4,7 +4,7 @@ import axios from 'axios';
 class AppView extends Component {
   componentDidMount() {
     axios
-      .get('/api')
+      .post('/api/restaurant', { name: 'Hey' })
       .then((res) => {
         console.log(res);
       })
