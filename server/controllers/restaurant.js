@@ -1,13 +1,25 @@
-const create = (RestaurantModel) => async (req, res) => {
+const errorHandler = require('../utils/errorHandler');
+
+const create = (RestaurantModel) => async (req, res, next) => {
   const { name } = req.body;
 
-  const restaurant = new RestaurantModel({ name });
+  if (!name) {
+    errorHandler(res, 'Restaurant must have a name.');
+    return;
+  }
 
-  const result = await restaurant.save();
+  const result = await RestaurantModel.create({ name });
 
   res.send({ success: true });
 };
 
+const get = (RestaurantModel) => async (req, res) => {
+  const restaurants = await RestaurantModel.find({});
+
+  res.send({ restaurants });
+};
+
 module.exports = {
-  create
+  create,
+  get
 };
