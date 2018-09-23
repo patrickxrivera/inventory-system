@@ -1,3 +1,3 @@
-import AppView from './AppView';
+import App from './App';
 
-export { AppView };
+export { App };
